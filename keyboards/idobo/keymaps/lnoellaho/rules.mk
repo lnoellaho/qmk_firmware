@@ -14,3 +14,4 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
+BACKLIGHT_ENABLE = yes       # Enable keyboard backlight
