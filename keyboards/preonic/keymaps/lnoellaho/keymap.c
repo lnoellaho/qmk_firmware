@@ -16,6 +16,8 @@
 
 #include QMK_KEYBOARD_H
 #include "muse.h"
+#define MODS_GUI_MASK   (MOD_BIT(KC_LGUI)|MOD_BIT(KC_RGUI))
+#define MEDIA_KEY_DELAY 10
 
 enum preonic_layers {
   _QWERTY,
@@ -251,6 +253,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
       }
     } else {
       if (get_mods() & MODS_GUI_MASK) {
+        uint16_t held_keycode_timer = timer_read();
         if (clockwise) {
           register_code(KC_VOLU);
           while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
