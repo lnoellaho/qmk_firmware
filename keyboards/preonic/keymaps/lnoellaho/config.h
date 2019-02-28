@@ -17,6 +17,7 @@
 
 /* Enable audio click */
 #define AUDIO_CLICKY
+#define AUDIO_CLICKY_FREQ_RANDOMNESS 1.0f
 
 /*
  * MIDI options
