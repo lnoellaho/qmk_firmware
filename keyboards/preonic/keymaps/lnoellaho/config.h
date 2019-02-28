@@ -15,6 +15,9 @@
 
 #define MUSIC_MASK (keycode != KC_NO)
 
+/* Enable audio click */
+#define AUDIO_CLICKY
+
 /*
  * MIDI options
  */
