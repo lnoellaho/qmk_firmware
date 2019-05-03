@@ -177,6 +177,24 @@ uint32_t layer_state_set_user(uint32_t state) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
+    case LOWER:
+      if (record->event.pressed) {
+        print("LOWER\n");
+        writePinHigh(C5);
+      } else {
+        writePinLow(C5);
+      }
+      return false;
+      break;
+    case RAISE:
+      if (record->event.pressed) {
+        print("RAISE\n");
+        writePinHigh(C4);
+      } else {
+        writePinLow(C4);
+      }
+      return false;
+      break;
     case QWERTY:
       if (record->event.pressed) {
         print("mode just switched to qwerty and this is a huge string\n");
