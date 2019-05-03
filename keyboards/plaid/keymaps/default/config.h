@@ -16,4 +16,8 @@
 
 #pragma once
 
+// #define BACKLIGHT_LED_COUNT 2
+// #undef BACKLIGHT_PIN
+// #define BACKLIGHT_PINS { C4, C5 }
+// #define BACKLIGHT_LEVELS 1
 // place overrides here
