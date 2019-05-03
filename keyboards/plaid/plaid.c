@@ -44,13 +44,13 @@ void led_set_kb(uint8_t usb_led) {
 	// } else {
 	// 	writePinHigh(C4);
 	// }
-	if (IS_LED_ON(usb_led, USB_LED_CAPS_LOCK)) {
-		writePinLow(C5);
-		writePinLow(C4);
-	} else {
-		writePinHigh(C5);
-		writePinHigh(C4);
-	}
+	// if (IS_LED_ON(usb_led, USB_LED_CAPS_LOCK)) {
+	// 	writePinLow(C5);
+	// 	writePinLow(C4);
+	// } else {
+	// 	writePinHigh(C5);
+	// 	writePinHigh(C4);
+	// }
 
 	led_set_user(usb_led);
 }
