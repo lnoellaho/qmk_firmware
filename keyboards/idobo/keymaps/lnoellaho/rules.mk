@@ -13,5 +13,5 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-BACKLIGHT_ENABLE = yes       # Enable keyboard backlight
+RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight
